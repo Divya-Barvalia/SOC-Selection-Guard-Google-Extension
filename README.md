@@ -4,6 +4,8 @@ A google extension made for an in browser security analysis of selected text, Ex
 
 SOC Selection Guard helps security teams triage phishing and social-engineering attempts faster. Highlight any text — an email, a support ticket, a chat message, a list of IOCs — right-click, and get a breakdown of red flags like suspicious links, urgency tactics, and impersonation language. Everything happens locally in the browser, with no data sent to any external server.
 
+Demo Video: Coming soon...
+
 ## Why this exists
 
 Triage usually starts the same way: someone reads through an email looking for the usual red flags — a weird link, a pushy tone, a request for credentials. SOC Selection Guard turns that manual first pass into something instant and consistent, so analysts can spend their time on judgment calls instead of re-reading the same message three times looking for clues.
