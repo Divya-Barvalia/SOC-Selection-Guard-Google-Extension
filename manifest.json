@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "SOC Selection Guard — Phishing & URL Heuristics",
+  "version": "1.0.0",
+  "description": "Select suspicious text (emails, chats, tickets). Right-click to run local infosec heuristics: URLs, urgency language, risky TLDs, IP hosts, and common phishing patterns—no data sent to external servers.",
+  "minimum_chrome_version": "114",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Open SOC Selection Guard",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "permissions": ["contextMenus", "sidePanel", "storage"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Open side panel"
+    }
+  }
+}

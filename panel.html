@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOC Selection Guard</title>
+    <link rel="stylesheet" href="panel.css" />
+  </head>
+  <body>
+    <header class="hdr">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">◆</span>
+        <div>
+          <h1>SOC Selection Guard</h1>
+          <p class="sub">Local heuristics for phishing & social-engineering triage</p>
+        </div>
+      </div>
+      <span class="pill" id="modePill">Infosec · No external calls</span>
+    </header>
+
+    <section class="howto card">
+      <h2>How to use</h2>
+      <ol>
+        <li>Select suspicious text (email body, ticket, chat, log line).</li>
+        <li>Right-click → <strong>Analyze selection for phishing / SE signals (local)</strong>.</li>
+        <li>Review signals below—correlate with sender, headers, and your IR playbooks.</li>
+      </ol>
+      <p class="fine">
+        This tool scores <em>patterns only</em>. It does not prove phishing and does not replace Safe Browsing, EDR, email gateways, or analyst judgment.
+      </p>
+    </section>
+
+    <section class="card">
+      <label for="manual">Paste or edit text</label>
+      <textarea id="manual" rows="6" placeholder="Paste IOCs, email snippet, or URL list…"></textarea>
+      <div class="row">
+        <button type="button" id="analyzeBtn" class="btn primary">Run analysis</button>
+        <button type="button" id="clearBtn" class="btn">Clear</button>
+      </div>
+    </section>
+
+    <section class="card results" id="results" hidden>
+      <div class="scoreRow">
+        <div>
+          <h2>Signal summary</h2>
+          <p id="summary" class="muted"></p>
+        </div>
+        <div class="scoreBox" aria-live="polite">
+          <span class="sev" id="severity">—</span>
+          <span class="pts"><span id="score">0</span> / <span id="maxScore">40</span></span>
+        </div>
+      </div>
+      <div id="sections"></div>
+    </section>
+
+    <script type="module" src="panel.js"></script>
+  </body>
+</html>
