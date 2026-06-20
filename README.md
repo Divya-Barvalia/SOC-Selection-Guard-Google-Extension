@@ -29,7 +29,7 @@ It's meant to sit alongside your existing tools, not replace them — a fast fir
 
 1. Select suspicious text anywhere in the browser.
 2. Right-click and choose the analyze option.
-3. A side panel opens with a risk score and a plain-language breakdown of what was found — suspicious links, manipulation tactics, embedded IPs, and more.
+3. A side panel opens with a risk score and a plain-language breakdown of what was found — suspicious links, manipulation tactics, embedded IPs, and other extracted and relevant data that may help analyze a security incident for a SOC analyst in a SOC environment.
 
 You can also paste text directly into the panel at any time, without needing to select anything on a page first.
 
