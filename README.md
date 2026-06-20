@@ -18,6 +18,13 @@ It's meant to sit alongside your existing tools, not replace them — a fast fir
 - **Keeps data local.** Nothing leaves the browser, which matters when the "suspicious" text might contain sensitive or confidential content.
 - **Gives context, not just a verdict.** Results explain *why* something was flagged, helping less experienced analysts learn to spot the same patterns themselves.
 
+## How you can start using it
+
+1. Go to `chrome://extensions/`.
+2. Make sure **Developer mode** is enabled (top right).
+3. Save the code package folder somewhere on your machine.
+4. Click **Load unpacked** and select the code package folder for the extension.
+5. Make sure the extension is enabled.
 ## How it works, at a glance
 
 1. Select suspicious text anywhere in the browser.
